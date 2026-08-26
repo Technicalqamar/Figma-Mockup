@@ -1,5 +1,5 @@
 /* ==========================================================================
-   KCW Pay — Product Website Scripts
+   KCW Pay — Mockup Presentation Scripts
    ========================================================================== */
 
 (function () {
@@ -25,10 +25,8 @@
 
   const saved = localStorage.getItem(THEME_KEY);
   if (saved) root.setAttribute('data-theme', saved);
-  else root.setAttribute('data-theme', 'dark');
 
   document.getElementById('themeToggle')?.addEventListener('click', toggleTheme);
-  document.getElementById('themeToggleMobile')?.addEventListener('click', toggleTheme);
 
   // ── Scroll Reveal ────────────────────────────────────────────────────────
   const revealObserver = new IntersectionObserver(
@@ -40,12 +38,30 @@
         }
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
+    { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
   );
 
   document.querySelectorAll('.reveal').forEach((el) => {
     revealObserver.observe(el);
   });
+
+  // ── Header Scroll ────────────────────────────────────────────────────────
+  const header = document.getElementById('header');
+
+  function updateScrollHeader() {
+    const isLight = root.getAttribute('data-theme') === 'light';
+    const scrolled = window.scrollY > 50;
+    if (header) {
+      if (isLight) {
+        header.style.background = scrolled ? 'rgba(245,246,250,0.95)' : 'rgba(245,246,250,0.85)';
+      } else {
+        header.style.background = scrolled ? 'rgba(10,11,15,0.95)' : 'rgba(10,11,15,0.85)';
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateScrollHeader, { passive: true });
+  updateScrollHeader();
 
   // ── Mobile Navigation ────────────────────────────────────────────────────
   const toggle = document.getElementById('headerToggle');
@@ -66,17 +82,6 @@
         spans[2].style.transform = '';
       }
     });
-
-    mobile.querySelectorAll('.header__mobile-link').forEach((link) => {
-      link.addEventListener('click', () => {
-        mobile.classList.remove('active');
-        toggle.setAttribute('aria-expanded', 'false');
-        const spans = toggle.querySelectorAll('span');
-        spans[0].style.transform = '';
-        spans[1].style.opacity = '';
-        spans[2].style.transform = '';
-      });
-    });
   }
 
   // ── Smooth Scroll ────────────────────────────────────────────────────────
@@ -87,44 +92,8 @@
       const target = document.querySelector(id);
       if (target) {
         e.preventDefault();
-        const h = document.querySelector('.header').offsetHeight;
+        const h = header ? header.offsetHeight : 0;
         window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - h - 20, behavior: 'smooth' });
-      }
-    });
-  });
-
-  // ── Header Background on Scroll ──────────────────────────────────────────
-  const header = document.getElementById('header');
-
-  function updateScrollHeader() {
-    const isLight = root.getAttribute('data-theme') === 'light';
-    const scrolled = window.scrollY > 50;
-    if (isLight) {
-      header.style.background = scrolled ? 'rgba(248,249,252,0.95)' : 'rgba(248,249,252,0.85)';
-    } else {
-      header.style.background = scrolled ? 'rgba(5,8,16,0.95)' : 'rgba(5,8,16,0.8)';
-    }
-  }
-
-  window.addEventListener('scroll', updateScrollHeader, { passive: true });
-  updateScrollHeader();
-
-  // ── FAQ Accordion ────────────────────────────────────────────────────────
-  document.querySelectorAll('.faq-item__trigger').forEach((trigger) => {
-    trigger.addEventListener('click', () => {
-      const item = trigger.closest('.faq-item');
-      const wasActive = item.classList.contains('active');
-
-      // Close all
-      document.querySelectorAll('.faq-item.active').forEach((open) => {
-        open.classList.remove('active');
-        open.querySelector('.faq-item__trigger').setAttribute('aria-expanded', 'false');
-      });
-
-      // Open clicked if it wasn't already open
-      if (!wasActive) {
-        item.classList.add('active');
-        trigger.setAttribute('aria-expanded', 'true');
       }
     });
   });

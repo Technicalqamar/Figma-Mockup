@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KCW Pay — Send USDT Like a Message</title>
-  <meta name="description" content="KCW Pay lets you send USDT across any blockchain like sending a message. Fast, transparent, and chain-agnostic.">
+  <title>KCW Pay — UI Mockup Presentation</title>
+  <meta name="description" content="KCW Pay — Premium UI mockup presentation showcasing the cross-chain USDT payment platform.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,384 +12,586 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Minimal Header -->
   <header class="header" id="header">
     <div class="header__inner">
-      <a href="#" class="header__logo" aria-label="KCW Pay Home">
+      <a href="#" class="header__logo" aria-label="KCW Pay">
         <img src="assets/logos/kcw-pay-logo.svg" alt="KCW Pay" class="header__logo-img">
         <span class="header__logo-text">KCW Pay</span>
       </a>
-      <nav class="header__nav" id="headerNav">
-        <a href="#chains" class="header__nav-link">Chains</a>
-        <a href="#wallet" class="header__nav-link">Wallet</a>
-        <a href="#how-it-works" class="header__nav-link">How It Works</a>
-        <a href="#activity" class="header__nav-link">Activity</a>
-        <a href="#faq" class="header__nav-link">FAQ</a>
-      </nav>
       <div class="header__actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="theme-toggle__icon theme-toggle__icon--dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           <svg class="theme-toggle__icon theme-toggle__icon--light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
-        <a href="#" class="btn btn--ghost btn--sm">Launch App</a>
-        <a href="#" class="btn btn--primary btn--sm">Connect Wallet</a>
       </div>
       <button class="header__toggle" id="headerToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-      <div class="header__mobile" id="headerMobile">
-      <nav class="header__mobile-nav">
-        <a href="#chains" class="header__mobile-link">Chains</a>
-        <a href="#wallet" class="header__mobile-link">Wallet</a>
-        <a href="#how-it-works" class="header__mobile-link">How It Works</a>
-        <a href="#activity" class="header__mobile-link">Activity</a>
-        <a href="#faq" class="header__mobile-link">FAQ</a>
-      </nav>
-      <div class="header__mobile-actions">
-        <a href="#" class="btn btn--ghost btn--full">Launch App</a>
-        <a href="#" class="btn btn--primary btn--full">Connect Wallet</a>
-        <button class="theme-toggle theme-toggle--mobile" id="themeToggleMobile" aria-label="Toggle theme">
-          <svg class="theme-toggle__icon theme-toggle__icon--dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg class="theme-toggle__icon theme-toggle__icon--light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <span>Toggle Theme</span>
-        </button>
-      </div>
-    </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero__bg">
-      <div class="hero__glow hero__glow--1"></div>
-      <div class="hero__glow hero__glow--2"></div>
+  <!-- SECTION 01 — Cover / Intro -->
+  <section class="cover">
+    <div class="cover__bg">
+      <div class="cover__glow cover__glow--1"></div>
+      <div class="cover__glow cover__glow--2"></div>
     </div>
     <div class="container">
-      <div class="hero__content">
-        <div class="hero__badge reveal">
-          <span class="hero__badge-dot"></span>
-          Cross-Chain Payments
-        </div>
-        <h1 class="hero__title reveal">
-          Send USDT like<br>a message.
-        </h1>
-        <p class="hero__subtitle reveal">
-          One wallet. Every chain. Send and receive USDT across Ethereum, Tron, BSC, and more — 
-          with the simplicity of sending a text message.
-        </p>
-        <div class="hero__ctas reveal">
-          <a href="#" class="btn btn--primary btn--lg">
-            Get Started
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-          <a href="#how-it-works" class="btn btn--ghost btn--lg">Learn More</a>
-        </div>
-        <div class="hero__stats reveal">
-          <div class="hero__stat">
-            <span class="hero__stat-value">4+</span>
-            <span class="hero__stat-label">Supported Chains</span>
+      <div class="cover__content reveal">
+        <span class="cover__label">UI Mockup Presentation</span>
+        <h1 class="cover__title">KCW Pay</h1>
+        <p class="cover__subtitle">Digital payments, reimagined.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02 — Hero Browser Mockup -->
+  <section class="section section--hero-mockup">
+    <div class="container">
+      <div class="browser-mockup reveal">
+        <div class="browser-mockup__frame">
+          <div class="browser-mockup__bar">
+            <div class="browser-mockup__dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="browser-mockup__url">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>kcwpay.com</span>
+            </div>
+            <div class="browser-mockup__bar-actions">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
           </div>
-          <div class="hero__stat">
-            <span class="hero__stat-value">Instant</span>
-            <span class="hero__stat-label">Settlement</span>
-          </div>
-          <div class="hero__stat">
-            <span class="hero__stat-value">0%</span>
-            <span class="hero__stat-label">Hidden Fees</span>
+          <div class="browser-mockup__screen">
+            <div class="mockup-hero">
+              <div class="mockup-hero__nav">
+                <div class="mockup-hero__logo">
+                  <img src="assets/logos/kcw-pay-logo.svg" alt="">
+                  <span>KCW Pay</span>
+                </div>
+                <div class="mockup-hero__nav-links">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-hero__nav-btns">
+                  <span class="mockup-btn mockup-btn--ghost">Launch App</span>
+                  <span class="mockup-btn mockup-btn--primary">Connect Wallet</span>
+                </div>
+              </div>
+              <div class="mockup-hero__content">
+                <div class="mockup-hero__badge">
+                  <span class="mockup-hero__badge-dot"></span>
+                  Cross-Chain Payments
+                </div>
+                <h2 class="mockup-hero__title">Send USDT like<br>a message.</h2>
+                <p class="mockup-hero__desc">One wallet. Every chain. Send and receive USDT across Ethereum, Tron, BSC, and more.</p>
+                <div class="mockup-hero__ctas">
+                  <span class="mockup-btn mockup-btn--primary">Get Started</span>
+                  <span class="mockup-btn mockup-btn--ghost">Learn More</span>
+                </div>
+                <div class="mockup-hero__stats">
+                  <div class="mockup-hero__stat">
+                    <span class="mockup-hero__stat-val">4+</span>
+                    <span class="mockup-hero__stat-lbl">Chains</span>
+                  </div>
+                  <div class="mockup-hero__stat">
+                    <span class="mockup-hero__stat-val">Instant</span>
+                    <span class="mockup-hero__stat-lbl">Settlement</span>
+                  </div>
+                  <div class="mockup-hero__stat">
+                    <span class="mockup-hero__stat-val">0%</span>
+                    <span class="mockup-hero__stat-lbl">Hidden Fees</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mockup-hero__visual">
+                <div class="mockup-phone">
+                  <div class="mockup-phone__frame">
+                    <div class="mockup-phone__notch"></div>
+                    <div class="mockup-phone__screen">
+                      <img src="assets/screens/hero-app.png" alt="KCW Pay App" class="mockup-phone__img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="hero__visual reveal">
-        <div class="hero__phone">
-          <div class="phone-mockup">
+      <p class="section-caption reveal">Home — Desktop View</p>
+    </div>
+  </section>
+
+  <!-- SECTION 03 — Full Website Showcase -->
+  <section class="section section--showcase">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Full Website</span>
+        <h2 class="section-title">Complete website<br>design showcase.</h2>
+      </div>
+      <div class="showcase-grid">
+        <!-- Hero Screen -->
+        <div class="showcase-item showcase-item--large reveal">
+          <div class="browser-mockup browser-mockup--compact">
+            <div class="browser-mockup__frame">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+                <div class="browser-mockup__url"><span>kcwpay.com</span></div>
+                <div class="browser-mockup__bar-actions"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <div class="mockup-section mockup-section--hero">
+                  <div class="mockup-section__hero-text">
+                    <div class="mockup-pill">Cross-Chain Payments</div>
+                    <h3>Send USDT like a message.</h3>
+                    <p>One wallet. Every chain. Send and receive USDT across Ethereum, Tron, BSC, and more.</p>
+                    <div class="mockup-btn-row">
+                      <span class="mockup-btn mockup-btn--primary mockup-btn--sm">Get Started</span>
+                      <span class="mockup-btn mockup-btn--ghost mockup-btn--sm">Learn More</span>
+                    </div>
+                  </div>
+                  <div class="mockup-section__hero-visual">
+                    <div class="mockup-phone mockup-phone--sm">
+                      <div class="mockup-phone__frame">
+                        <div class="mockup-phone__notch"></div>
+                        <div class="mockup-phone__screen">
+                          <img src="assets/screens/hero-app.png" alt="" class="mockup-phone__img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="showcase-label">Screen 01 — Hero</span>
+        </div>
+
+        <!-- Chains Screen -->
+        <div class="showcase-item reveal">
+          <div class="browser-mockup browser-mockup--compact">
+            <div class="browser-mockup__frame">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+                <div class="browser-mockup__url"><span>kcwpay.com/chains</span></div>
+                <div class="browser-mockup__bar-actions"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <div class="mockup-section mockup-section--chains">
+                  <div class="mockup-section__label">Supported Chains</div>
+                  <h3>One wallet,<br>every chain.</h3>
+                  <div class="mockup-chain-grid">
+                    <div class="mockup-chain"><img src="assets/icons/ethereum.svg" alt=""><span>Ethereum</span></div>
+                    <div class="mockup-chain"><img src="assets/icons/tron.svg" alt=""><span>Tron</span></div>
+                    <div class="mockup-chain"><img src="assets/icons/bsc.svg" alt=""><span>BNB Chain</span></div>
+                    <div class="mockup-chain"><img src="assets/icons/polygon.svg" alt=""><span>Polygon</span></div>
+                    <div class="mockup-chain"><img src="assets/icons/arbitrum.svg" alt=""><span>Arbitrum</span></div>
+                    <div class="mockup-chain"><img src="assets/icons/optimism.svg" alt=""><span>Optimism</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="showcase-label">Screen 02 — Supported Chains</span>
+        </div>
+
+        <!-- Wallet Features Screen -->
+        <div class="showcase-item reveal">
+          <div class="browser-mockup browser-mockup--compact">
+            <div class="browser-mockup__frame">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+                <div class="browser-mockup__url"><span>kcwpay.com/features</span></div>
+                <div class="browser-mockup__bar-actions"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <div class="mockup-section mockup-section--wallet">
+                  <div class="mockup-section__label">Features</div>
+                  <h3>Everything you need in one wallet.</h3>
+                  <div class="mockup-wallet-grid">
+                    <div class="mockup-wallet-card mockup-wallet-card--wide">
+                      <div class="mockup-wallet-icon"><img src="assets/icons/send.svg" alt=""></div>
+                      <span>Cross-Chain Transfers</span>
+                    </div>
+                    <div class="mockup-wallet-card">
+                      <div class="mockup-wallet-icon"><img src="assets/icons/swap.svg" alt=""></div>
+                      <span>In-App Swap</span>
+                    </div>
+                    <div class="mockup-wallet-card">
+                      <div class="mockup-wallet-icon"><img src="assets/icons/history.svg" alt=""></div>
+                      <span>Transaction History</span>
+                    </div>
+                    <div class="mockup-wallet-card">
+                      <div class="mockup-wallet-icon"><img src="assets/icons/shield.svg" alt=""></div>
+                      <span>Self-Custody</span>
+                    </div>
+                    <div class="mockup-wallet-card">
+                      <div class="mockup-wallet-icon"><img src="assets/icons/qrcode.svg" alt=""></div>
+                      <span>QR Payments</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="showcase-label">Screen 03 — Wallet Features</span>
+        </div>
+
+        <!-- How It Works Screen -->
+        <div class="showcase-item reveal">
+          <div class="browser-mockup browser-mockup--compact">
+            <div class="browser-mockup__frame">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+                <div class="browser-mockup__url"><span>kcwpay.com/how-it-works</span></div>
+                <div class="browser-mockup__bar-actions"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <div class="mockup-section mockup-section--steps">
+                  <div class="mockup-section__label">How It Works</div>
+                  <h3>Three steps. Any chain.</h3>
+                  <div class="mockup-steps">
+                    <div class="mockup-step">
+                      <span class="mockup-step__num">01</span>
+                      <span class="mockup-step__title">Connect Wallet</span>
+                    </div>
+                    <div class="mockup-step-arrow">→</div>
+                    <div class="mockup-step">
+                      <span class="mockup-step__num">02</span>
+                      <span class="mockup-step__title">Choose Amount</span>
+                    </div>
+                    <div class="mockup-step-arrow">→</div>
+                    <div class="mockup-step">
+                      <span class="mockup-step__num">03</span>
+                      <span class="mockup-step__title">Send & Confirm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="showcase-label">Screen 04 — How It Works</span>
+        </div>
+
+        <!-- Activity Screen -->
+        <div class="showcase-item reveal">
+          <div class="browser-mockup browser-mockup--compact">
+            <div class="browser-mockup__frame">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+                <div class="browser-mockup__url"><span>kcwpay.com/activity</span></div>
+                <div class="browser-mockup__bar-actions"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <div class="mockup-section mockup-section--activity">
+                  <div class="mockup-section__label">Live Activity</div>
+                  <h3>Recent Activity</h3>
+                  <div class="mockup-activity-list">
+                    <div class="mockup-activity-row">
+                      <div class="mockup-activity-avatar" style="background:linear-gradient(135deg,#00D4AA,#00A88A)">0x</div>
+                      <div class="mockup-activity-info">
+                        <span class="mockup-activity-addr">0x7a3b...4f2e</span>
+                        <span class="mockup-activity-chain">Ethereum → Tron</span>
+                      </div>
+                      <span class="mockup-activity-amt">+250.00 USDT</span>
+                    </div>
+                    <div class="mockup-activity-row">
+                      <div class="mockup-activity-avatar" style="background:linear-gradient(135deg,#4F6EF7,#3A56D4)">0x</div>
+                      <div class="mockup-activity-info">
+                        <span class="mockup-activity-addr">0x1c9d...8a7b</span>
+                        <span class="mockup-activity-chain">Tron → BSC</span>
+                      </div>
+                      <span class="mockup-activity-amt">+1,200.00 USDT</span>
+                    </div>
+                    <div class="mockup-activity-row">
+                      <div class="mockup-activity-avatar" style="background:linear-gradient(135deg,#9B6EF7,#7B4FD4)">0x</div>
+                      <div class="mockup-activity-info">
+                        <span class="mockup-activity-addr">0x5e2f...c3d1</span>
+                        <span class="mockup-activity-chain">BSC → Ethereum</span>
+                      </div>
+                      <span class="mockup-activity-amt">+75.50 USDT</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="showcase-label">Screen 05 — Recent Activity</span>
+        </div>
+
+        <!-- Transparency Screen -->
+        <div class="showcase-item reveal">
+          <div class="browser-mockup browser-mockup--compact">
+            <div class="browser-mockup__frame">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+                <div class="browser-mockup__url"><span>kcwpay.com/transparency</span></div>
+                <div class="browser-mockup__bar-actions"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <div class="mockup-section mockup-section--transparency">
+                  <div class="mockup-section__label">Transparency</div>
+                  <h3>Transparency by design.</h3>
+                  <div class="mockup-tx-card">
+                    <div class="mockup-tx-header">
+                      <span>Transaction Details</span>
+                      <span class="mockup-tx-status">Confirmed</span>
+                    </div>
+                    <div class="mockup-tx-row"><span>Amount</span><span>250.00 USDT</span></div>
+                    <div class="mockup-tx-row"><span>From</span><span>Ethereum</span></div>
+                    <div class="mockup-tx-row"><span>To</span><span>Tron</span></div>
+                    <div class="mockup-tx-row"><span>Network Fee</span><span>1.20 USDT</span></div>
+                    <div class="mockup-tx-row mockup-tx-row--total"><span>Total</span><span>251.20 USDT</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="showcase-label">Screen 06 — Transparency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 04 — Mobile Screens -->
+  <section class="section section--mobile">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Mobile Experience</span>
+        <h2 class="section-title">Designed for<br>mobile first.</h2>
+        <p class="section-desc">A seamless mobile experience that makes cross-chain payments feel effortless.</p>
+      </div>
+      <div class="phone-row reveal">
+        <div class="phone-mockup phone-mockup--lg">
+          <div class="phone-mockup__frame">
+            <div class="phone-mockup__notch"></div>
+            <div class="phone-mockup__screen">
+              <img src="assets/screens/hero-app.png" alt="KCW Pay Home" class="phone-mockup__img">
+            </div>
+            <div class="phone-mockup__indicator"></div>
+          </div>
+          <span class="phone-label">Home</span>
+        </div>
+        <div class="phone-mockup phone-mockup--lg phone-mockup--offset">
+          <div class="phone-mockup__frame">
+            <div class="phone-mockup__notch"></div>
+            <div class="phone-mockup__screen">
+              <img src="assets/screens/hero-app.png" alt="KCW Pay Send" class="phone-mockup__img">
+            </div>
+            <div class="phone-mockup__indicator"></div>
+          </div>
+          <span class="phone-label">Send USDT</span>
+        </div>
+        <div class="phone-mockup phone-mockup--lg">
+          <div class="phone-mockup__frame">
+            <div class="phone-mockup__notch"></div>
+            <div class="phone-mockup__screen">
+              <img src="assets/screens/hero-app.png" alt="KCW Pay Activity" class="phone-mockup__img">
+            </div>
+            <div class="phone-mockup__indicator"></div>
+          </div>
+          <span class="phone-label">Activity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 05 — Feature Showcase: Wallet -->
+  <section class="section section--feature">
+    <div class="container">
+      <div class="feature-layout">
+        <div class="feature-text reveal">
+          <span class="section-label">Wallet</span>
+          <h2 class="section-title">Everything you need<br>in one wallet.</h2>
+          <p class="section-desc">Send USDT across any supported chain. Swap tokens. View history. All from a single wallet.</p>
+          <div class="feature-points">
+            <div class="feature-point">
+              <img src="assets/icons/send.svg" alt="" class="feature-point__icon">
+              <div>
+                <span class="feature-point__title">Cross-Chain Transfers</span>
+                <span class="feature-point__desc">Send to anyone on any supported chain</span>
+              </div>
+            </div>
+            <div class="feature-point">
+              <img src="assets/icons/swap.svg" alt="" class="feature-point__icon">
+              <div>
+                <span class="feature-point__title">In-App Swap</span>
+                <span class="feature-point__desc">Swap tokens directly within the wallet</span>
+              </div>
+            </div>
+            <div class="feature-point">
+              <img src="assets/icons/shield.svg" alt="" class="feature-point__icon">
+              <div>
+                <span class="feature-point__title">Self-Custody</span>
+                <span class="feature-point__desc">Your keys, your crypto, full control</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-visual reveal">
+          <div class="feature-composition">
+            <div class="phone-mockup phone-mockup--xl">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/screens/hero-app.png" alt="KCW Pay Wallet" class="phone-mockup__img">
+                </div>
+                <div class="phone-mockup__indicator"></div>
+              </div>
+            </div>
+            <div class="feature-float feature-float--chains">
+              <div class="feature-float__chain-row">
+                <img src="assets/icons/ethereum.svg" alt="">
+                <img src="assets/icons/tron.svg" alt="">
+                <img src="assets/icons/bsc.svg" alt="">
+                <img src="assets/icons/polygon.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 06 — Feature Showcase: Payment -->
+  <section class="section section--feature section--feature-alt">
+    <div class="container">
+      <div class="feature-layout feature-layout--reverse">
+        <div class="feature-text reveal">
+          <span class="section-label">Payment</span>
+          <h2 class="section-title">Send USDT like<br>a message.</h2>
+          <p class="section-desc">Cross-chain transfers made simple. Send from any chain, receive on any chain.</p>
+          <div class="feature-points">
+            <div class="feature-point">
+              <img src="assets/icons/process.svg" alt="" class="feature-point__icon">
+              <div>
+                <span class="feature-point__title">Three-Step Process</span>
+                <span class="feature-point__desc">Connect, choose amount, send</span>
+              </div>
+            </div>
+            <div class="feature-point">
+              <img src="assets/icons/qrcode.svg" alt="" class="feature-point__icon">
+              <div>
+                <span class="feature-point__title">QR Payments</span>
+                <span class="feature-point__desc">Scan and pay instantly</span>
+              </div>
+            </div>
+            <div class="feature-point">
+              <img src="assets/icons/history.svg" alt="" class="feature-point__icon">
+              <div>
+                <span class="feature-point__title">Transaction History</span>
+                <span class="feature-point__desc">Unified cross-chain timeline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-visual reveal">
+          <div class="feature-composition feature-composition--phones">
+            <div class="phone-mockup phone-mockup--md phone-mockup--tilted">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/screens/hero-app.png" alt="KCW Pay Step 1" class="phone-mockup__img">
+                </div>
+                <div class="phone-mockup__indicator"></div>
+              </div>
+            </div>
+            <div class="phone-mockup phone-mockup--md phone-mockup--front">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/screens/hero-app.png" alt="KCW Pay Step 2" class="phone-mockup__img">
+                </div>
+                <div class="phone-mockup__indicator"></div>
+              </div>
+            </div>
+            <div class="phone-mockup phone-mockup--md phone-mockup--tilted-r">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch"></div>
+                <div class="phone-mockup__screen">
+                  <img src="assets/screens/hero-app.png" alt="KCW Pay Step 3" class="phone-mockup__img">
+                </div>
+                <div class="phone-mockup__indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 07 — Screen Grid -->
+  <section class="section section--grid">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Screen Collection</span>
+        <h2 class="section-title">Every screen,<br>every detail.</h2>
+      </div>
+      <div class="screen-grid reveal">
+        <div class="screen-grid__item screen-grid__item--hero">
+          <div class="browser-mockup browser-mockup--compact">
+            <div class="browser-mockup__frame">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+                <div class="browser-mockup__url"><span>kcwpay.com</span></div>
+                <div class="browser-mockup__bar-actions"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <div class="mockup-section mockup-section--hero-mock">
+                  <div class="mockup-section__label">Home</div>
+                  <h3>Send USDT like a message.</h3>
+                  <div class="mockup-btn-row">
+                    <span class="mockup-btn mockup-btn--primary mockup-btn--sm">Get Started</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="screen-grid__item screen-grid__item--phone1">
+          <div class="phone-mockup phone-mockup--sm">
             <div class="phone-mockup__frame">
               <div class="phone-mockup__notch"></div>
               <div class="phone-mockup__screen">
-                <img src="assets/screens/hero-app.png" alt="KCW Pay App" class="phone-mockup__img">
+                <img src="assets/screens/hero-app.png" alt="" class="phone-mockup__img">
               </div>
               <div class="phone-mockup__indicator"></div>
             </div>
           </div>
-          <div class="hero__float hero__float--usdt">
-            <img src="assets/icons/usdt.svg" alt="USDT" class="hero__float-icon">
-            <span class="hero__float-label">+0.5 USDT</span>
-          </div>
-          <div class="hero__float hero__float--eth">
-            <img src="assets/icons/ethereum.svg" alt="Ethereum" class="hero__float-icon">
-          </div>
-          <div class="hero__float hero__float--msg">
-            <span class="hero__float-bubble">Sent!</span>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Supported Chains -->
-  <section class="chains" id="chains">
-    <div class="container">
-      <div class="chains__header reveal">
-        <span class="section-label">Supported Chains</span>
-        <h2 class="section-title">One wallet,<br>every chain.</h2>
-        <p class="section-desc">
-          Send USDT across the networks that matter most. No wrapping, no bridges, no hassle.
-        </p>
-      </div>
-      <div class="chains__grid reveal">
-        <div class="chain-card">
-          <img src="assets/icons/ethereum.svg" alt="Ethereum" class="chain-card__icon">
-          <span class="chain-card__name">Ethereum</span>
-          <span class="chain-card__tag">ETH</span>
-        </div>
-        <div class="chain-card">
-          <img src="assets/icons/tron.svg" alt="Tron" class="chain-card__icon">
-          <span class="chain-card__name">Tron</span>
-          <span class="chain-card__tag">TRX</span>
-        </div>
-        <div class="chain-card">
-          <img src="assets/icons/bsc.svg" alt="BNB Chain" class="chain-card__icon">
-          <span class="chain-card__name">BNB Chain</span>
-          <span class="chain-card__tag">BSC</span>
-        </div>
-        <div class="chain-card">
-          <img src="assets/icons/polygon.svg" alt="Polygon" class="chain-card__icon">
-          <span class="chain-card__name">Polygon</span>
-          <span class="chain-card__tag">MATIC</span>
-        </div>
-        <div class="chain-card">
-          <img src="assets/icons/arbitrum.svg" alt="Arbitrum" class="chain-card__icon">
-          <span class="chain-card__name">Arbitrum</span>
-          <span class="chain-card__tag">ARB</span>
-        </div>
-        <div class="chain-card">
-          <img src="assets/icons/optimism.svg" alt="Optimism" class="chain-card__icon">
-          <span class="chain-card__name">Optimism</span>
-          <span class="chain-card__tag">OP</span>
-        </div>
-      </div>
-      <div class="chains__cta reveal">
-        <a href="#" class="btn btn--primary btn--lg">
-          View All Chains
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Everything You Need -->
-  <section class="wallet" id="wallet">
-    <div class="container">
-      <div class="wallet__header reveal">
-        <span class="section-label">Features</span>
-        <h2 class="section-title">Everything you need<br>in one wallet.</h2>
-      </div>
-      <div class="wallet__grid">
-        <div class="wallet-card wallet-card--large reveal">
-          <div class="wallet-card__icon-wrap">
-            <img src="assets/icons/send.svg" alt="" class="wallet-card__icon">
-          </div>
-          <h3 class="wallet-card__title">Cross-Chain Transfers</h3>
-          <p class="wallet-card__desc">Send USDT to anyone on any supported chain. The recipient gets USDT on their chain — you send from yours.</p>
-        </div>
-        <div class="wallet-card reveal">
-          <div class="wallet-card__icon-wrap">
-            <img src="assets/icons/swap.svg" alt="" class="wallet-card__icon">
-          </div>
-          <h3 class="wallet-card__title">In-App Swap</h3>
-          <p class="wallet-card__desc">Swap between USDT and other tokens directly within the wallet.</p>
-        </div>
-        <div class="wallet-card reveal">
-          <div class="wallet-card__icon-wrap">
-            <img src="assets/icons/history.svg" alt="" class="wallet-card__icon">
-          </div>
-          <h3 class="wallet-card__title">Transaction History</h3>
-          <p class="wallet-card__desc">View all your cross-chain activity in one unified timeline.</p>
-        </div>
-        <div class="wallet-card reveal">
-          <div class="wallet-card__icon-wrap">
-            <img src="assets/icons/shield.svg" alt="" class="wallet-card__icon">
-          </div>
-          <h3 class="wallet-card__title">Self-Custody</h3>
-          <p class="wallet-card__desc">Your keys, your crypto. Full control over your assets at all times.</p>
-        </div>
-        <div class="wallet-card reveal">
-          <div class="wallet-card__icon-wrap">
-            <img src="assets/icons/qrcode.svg" alt="" class="wallet-card__icon">
-          </div>
-          <h3 class="wallet-card__title">QR Payments</h3>
-          <p class="wallet-card__desc">Scan and pay instantly with QR code support for in-person transactions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works -->
-  <section class="steps" id="how-it-works">
-    <div class="container">
-      <div class="steps__header reveal">
-        <span class="section-label">How It Works</span>
-        <h2 class="section-title">Three steps.<br>Any chain.</h2>
-      </div>
-      <div class="steps__grid">
-        <div class="step-card reveal">
-          <span class="step-card__number">01</span>
-          <h3 class="step-card__title">Connect Your Wallet</h3>
-          <p class="step-card__desc">Link your existing crypto wallet or create a new one in seconds.</p>
-        </div>
-        <div class="step-card__connector reveal"></div>
-        <div class="step-card reveal">
-          <span class="step-card__number">02</span>
-          <h3 class="step-card__title">Choose Amount & Chain</h3>
-          <p class="step-card__desc">Enter the USDT amount and select the destination chain.</p>
-        </div>
-        <div class="step-card__connector reveal"></div>
-        <div class="step-card reveal">
-          <span class="step-card__number">03</span>
-          <h3 class="step-card__title">Send & Confirm</h3>
-          <p class="step-card__desc">Confirm the transaction. USDT arrives on the destination chain instantly.</p>
-        </div>
-      </div>
-      <div class="steps__visual reveal">
-        <div class="steps__diagram">
-          <div class="steps__node steps__node--start">
-            <img src="assets/icons/wallet.svg" alt="Wallet" class="steps__node-icon">
-            <span>Your Wallet</span>
-          </div>
-          <div class="steps__arrow">
-            <svg width="80" height="24" viewBox="0 0 80 24" fill="none"><path d="M0 12h72M72 12l-8-8M72 12l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="steps__node steps__node--process">
-            <img src="assets/icons/process.svg" alt="KCW Pay" class="steps__node-icon">
-            <span>KCW Pay</span>
-          </div>
-          <div class="steps__arrow">
-            <svg width="80" height="24" viewBox="0 0 80 24" fill="none"><path d="M0 12h72M72 12l-8-8M72 12l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="steps__node steps__node--end">
-            <img src="assets/icons/recipient.svg" alt="Recipient" class="steps__node-icon">
-            <span>Recipient</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recent Activity -->
-  <section class="activity" id="activity">
-    <div class="container">
-      <div class="activity__header reveal">
-        <span class="section-label">Live Activity</span>
-        <h2 class="section-title">Recent Activity</h2>
-        <p class="section-desc">Real transactions happening across chains right now.</p>
-      </div>
-      <div class="activity__list">
-        <div class="activity-card reveal">
-          <div class="activity-card__left">
-            <div class="activity-card__avatar activity-card__avatar--green">0x</div>
-            <div class="activity-card__info">
-              <span class="activity-card__addr">0x7a3b...4f2e</span>
-              <span class="activity-card__action">Sent USDT</span>
-            </div>
-          </div>
-          <div class="activity-card__right">
-            <span class="activity-card__amount">+250.00 USDT</span>
-            <span class="activity-card__chain">Ethereum → Tron</span>
-          </div>
-        </div>
-        <div class="activity-card reveal">
-          <div class="activity-card__left">
-            <div class="activity-card__avatar activity-card__avatar--blue">0x</div>
-            <div class="activity-card__info">
-              <span class="activity-card__addr">0x1c9d...8a7b</span>
-              <span class="activity-card__action">Sent USDT</span>
-            </div>
-          </div>
-          <div class="activity-card__right">
-            <span class="activity-card__amount">+1,200.00 USDT</span>
-            <span class="activity-card__chain">Tron → BSC</span>
-          </div>
-        </div>
-        <div class="activity-card reveal">
-          <div class="activity-card__left">
-            <div class="activity-card__avatar activity-card__avatar--purple">0x</div>
-            <div class="activity-card__info">
-              <span class="activity-card__addr">0x5e2f...c3d1</span>
-              <span class="activity-card__action">Sent USDT</span>
-            </div>
-          </div>
-          <div class="activity-card__right">
-            <span class="activity-card__amount">+75.50 USDT</span>
-            <span class="activity-card__chain">BSC → Ethereum</span>
-          </div>
-        </div>
-        <div class="activity-card reveal">
-          <div class="activity-card__left">
-            <div class="activity-card__avatar activity-card__avatar--orange">0x</div>
-            <div class="activity-card__info">
-              <span class="activity-card__addr">0x8b4a...d9e6</span>
-              <span class="activity-card__action">Sent USDT</span>
-            </div>
-          </div>
-          <div class="activity-card__right">
-            <span class="activity-card__amount">+500.00 USDT</span>
-            <span class="activity-card__chain">Ethereum → Polygon</span>
-          </div>
-        </div>
-        <div class="activity-card reveal">
-          <div class="activity-card__left">
-            <div class="activity-card__avatar activity-card__avatar--teal">0x</div>
-            <div class="activity-card__info">
-              <span class="activity-card__addr">0x3f7c...1b5a</span>
-              <span class="activity-card__action">Sent USDT</span>
-            </div>
-          </div>
-          <div class="activity-card__right">
-            <span class="activity-card__amount">+89.99 USDT</span>
-            <span class="activity-card__chain">Polygon → Arbitrum</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="testimonials__header reveal">
-        <span class="section-label">Testimonials</span>
-        <h2 class="section-title">Hear from the people<br>who use KCWPay</h2>
-      </div>
-      <div class="testimonials__grid">
-        <div class="testimonial-card reveal">
-          <div class="testimonial-card__stars">★★★★★</div>
-          <p class="testimonial-card__text">"Finally a way to send USDT that actually works cross-chain without the headache. KCW Pay made it as simple as sending a text."</p>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar">AK</div>
-            <div class="testimonial-card__meta">
-              <span class="testimonial-card__name">Alex K.</span>
-              <span class="testimonial-card__role">Crypto Trader</span>
+        <div class="screen-grid__item screen-grid__item--phone2">
+          <div class="phone-mockup phone-mockup--sm">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen">
+                <img src="assets/screens/hero-app.png" alt="" class="phone-mockup__img">
+              </div>
+              <div class="phone-mockup__indicator"></div>
             </div>
           </div>
         </div>
-        <div class="testimonial-card reveal">
-          <div class="testimonial-card__stars">★★★★★</div>
-          <p class="testimonial-card__text">"I use this to pay freelancers across different chains. The speed and transparency are unmatched. Love the clean interface."</p>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar">MR</div>
-            <div class="testimonial-card__meta">
-              <span class="testimonial-card__name">Maria R.</span>
-              <span class="testimonial-card__role">Business Owner</span>
+        <div class="screen-grid__item screen-grid__item--detail1">
+          <div class="detail-card">
+            <div class="mockup-tx-card">
+              <div class="mockup-tx-header">
+                <span>Transaction</span>
+                <span class="mockup-tx-status">Confirmed</span>
+              </div>
+              <div class="mockup-tx-row"><span>Amount</span><span>250.00 USDT</span></div>
+              <div class="mockup-tx-row"><span>From</span><span>Ethereum</span></div>
+              <div class="mockup-tx-row"><span>To</span><span>Tron</span></div>
             </div>
           </div>
         </div>
-        <div class="testimonial-card reveal">
-          <div class="testimonial-card__stars">★★★★★</div>
-          <p class="testimonial-card__text">"The self-custody approach gives me peace of mind. I stay in control while KCW Pay handles the cross-chain complexity behind the scenes."</p>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar">JT</div>
-            <div class="testimonial-card__meta">
-              <span class="testimonial-card__name">James T.</span>
-              <span class="testimonial-card__role">DeFi Enthusiast</span>
+        <div class="screen-grid__item screen-grid__item--detail2">
+          <div class="detail-card">
+            <div class="mockup-chain-grid mockup-chain-grid--sm">
+              <div class="mockup-chain"><img src="assets/icons/ethereum.svg" alt=""><span>ETH</span></div>
+              <div class="mockup-chain"><img src="assets/icons/tron.svg" alt=""><span>TRX</span></div>
+              <div class="mockup-chain"><img src="assets/icons/bsc.svg" alt=""><span>BSC</span></div>
+              <div class="mockup-chain"><img src="assets/icons/polygon.svg" alt=""><span>MATIC</span></div>
+              <div class="mockup-chain"><img src="assets/icons/arbitrum.svg" alt=""><span>ARB</span></div>
+              <div class="mockup-chain"><img src="assets/icons/optimism.svg" alt=""><span>OP</span></div>
             </div>
           </div>
         </div>
@@ -397,61 +599,62 @@
     </div>
   </section>
 
-  <!-- Transparency -->
-  <section class="transparency" id="transparency">
+  <!-- SECTION 08 — Desktop + Mobile Composition -->
+  <section class="section section--composition">
     <div class="container">
-      <div class="transparency__layout">
-        <div class="transparency__text reveal">
-          <span class="section-label">Transparency</span>
-          <h2 class="section-title">Transparency<br>by design.</h2>
-          <p class="section-desc">Every transaction is verifiable on-chain. No hidden fees, no black boxes — just clear, auditable transfers you can verify yourself.</p>
-          <ul class="transparency__list">
-            <li class="transparency__list-item">
-              <img src="assets/icons/check-circle.svg" alt="" class="transparency__list-icon">
-              <span>On-chain verification for every transfer</span>
-            </li>
-            <li class="transparency__list-item">
-              <img src="assets/icons/check-circle.svg" alt="" class="transparency__list-icon">
-              <span>Real-time fee breakdown before confirmation</span>
-            </li>
-            <li class="transparency__list-item">
-              <img src="assets/icons/check-circle.svg" alt="" class="transparency__list-icon">
-              <span>Open-source smart contracts</span>
-            </li>
-            <li class="transparency__list-item">
-              <img src="assets/icons/check-circle.svg" alt="" class="transparency__list-icon">
-              <span>No hidden charges or hidden spreads</span>
-            </li>
-          </ul>
+      <div class="section-header reveal">
+        <span class="section-label">Cross-Platform</span>
+        <h2 class="section-title">Desktop + Mobile.</h2>
+        <p class="section-desc">A consistent experience across every device and screen size.</p>
+      </div>
+      <div class="composition reveal">
+        <div class="composition__desktop">
+          <div class="browser-mockup">
+            <div class="browser-mockup__frame">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+                <div class="browser-mockup__url"><span>kcwpay.com</span></div>
+                <div class="browser-mockup__bar-actions"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <div class="mockup-section mockup-section--hero-mock mockup-section--full">
+                  <div class="mockup-section__hero-text">
+                    <div class="mockup-pill">Cross-Chain Payments</div>
+                    <h3>Send USDT like a message.</h3>
+                    <p>One wallet. Every chain.</p>
+                  </div>
+                  <div class="mockup-section__hero-visual">
+                    <div class="mockup-phone mockup-phone--xs">
+                      <div class="mockup-phone__frame">
+                        <div class="mockup-phone__notch"></div>
+                        <div class="mockup-phone__screen">
+                          <img src="assets/screens/hero-app.png" alt="" class="mockup-phone__img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="transparency__visual reveal">
-          <div class="transparency__card">
-            <div class="transparency__card-header">
-              <span class="transparency__card-label">Transaction Details</span>
-              <span class="transparency__card-status transparency__card-status--confirmed">Confirmed</span>
+        <div class="composition__phones">
+          <div class="phone-mockup phone-mockup--md">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen">
+                <img src="assets/screens/hero-app.png" alt="KCW Pay" class="phone-mockup__img">
+              </div>
+              <div class="phone-mockup__indicator"></div>
             </div>
-            <div class="transparency__card-row">
-              <span class="transparency__card-key">Amount</span>
-              <span class="transparency__card-val">250.00 USDT</span>
-            </div>
-            <div class="transparency__card-row">
-              <span class="transparency__card-key">From</span>
-              <span class="transparency__card-val">Ethereum</span>
-            </div>
-            <div class="transparency__card-row">
-              <span class="transparency__card-key">To</span>
-              <span class="transparency__card-val">Tron</span>
-            </div>
-            <div class="transparency__card-row">
-              <span class="transparency__card-key">Network Fee</span>
-              <span class="transparency__card-val">1.20 USDT</span>
-            </div>
-            <div class="transparency__card-row transparency__card-row--total">
-              <span class="transparency__card-key">Total</span>
-              <span class="transparency__card-val">251.20 USDT</span>
-            </div>
-            <div class="transparency__card-hash">
-              <span>Tx: 0x8f3a...b2c1</span>
+          </div>
+          <div class="phone-mockup phone-mockup--sm">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen">
+                <img src="assets/screens/hero-app.png" alt="KCW Pay" class="phone-mockup__img">
+              </div>
+              <div class="phone-mockup__indicator"></div>
             </div>
           </div>
         </div>
@@ -459,167 +662,66 @@
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="faq" id="faq">
+  <!-- SECTION 09 — Closing -->
+  <section class="section section--closing">
+    <div class="closing__bg">
+      <div class="closing__glow closing__glow--1"></div>
+      <div class="closing__glow closing__glow--2"></div>
+    </div>
     <div class="container">
-      <div class="faq__header reveal">
-        <span class="section-label">FAQ</span>
-        <h2 class="section-title">Frequently Asked<br>Questions</h2>
+      <div class="closing__content reveal">
+        <img src="assets/logos/kcw-pay-logo.svg" alt="KCW Pay" class="closing__logo">
+        <h2 class="closing__title">KCW Pay</h2>
+        <p class="closing__subtitle">Designed for seamless digital payments.</p>
       </div>
-      <div class="faq__list">
-        <div class="faq-item reveal">
-          <button class="faq-item__trigger" aria-expanded="false">
-            <span class="faq-item__question">What is KCW Pay?</span>
-            <span class="faq-item__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
-            </span>
-          </button>
-          <div class="faq-item__answer">
-            <p>KCW Pay is a cross-chain USDT payment platform that lets you send and receive USDT across multiple blockchain networks — Ethereum, Tron, BSC, Polygon, and more — with the simplicity of sending a message.</p>
+      <div class="closing__devices reveal">
+        <div class="browser-mockup browser-mockup--compact browser-mockup--closing">
+          <div class="browser-mockup__frame">
+            <div class="browser-mockup__bar">
+              <div class="browser-mockup__dots"><span></span><span></span><span></span></div>
+              <div class="browser-mockup__url"><span>kcwpay.com</span></div>
+              <div class="browser-mockup__bar-actions"></div>
+            </div>
+            <div class="browser-mockup__screen">
+              <div class="mockup-section mockup-section--hero-mock">
+                <h3>Send USDT like a message.</h3>
+                <p>One wallet. Every chain.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="faq-item reveal">
-          <button class="faq-item__trigger" aria-expanded="false">
-            <span class="faq-item__question">How does cross-chain transfer work?</span>
-            <span class="faq-item__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
-            </span>
-          </button>
-          <div class="faq-item__answer">
-            <p>When you send USDT through KCW Pay, you send from your chain of choice. The recipient receives USDT on their preferred chain. Our smart contracts handle the conversion and delivery transparently, so both parties see exactly what's happening.</p>
+        <div class="closing__phones">
+          <div class="phone-mockup phone-mockup--sm">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen">
+                <img src="assets/screens/hero-app.png" alt="" class="phone-mockup__img">
+              </div>
+              <div class="phone-mockup__indicator"></div>
+            </div>
+          </div>
+          <div class="phone-mockup phone-mockup--sm">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen">
+                <img src="assets/screens/hero-app.png" alt="" class="phone-mockup__img">
+              </div>
+              <div class="phone-mockup__indicator"></div>
+            </div>
           </div>
         </div>
-        <div class="faq-item reveal">
-          <button class="faq-item__trigger" aria-expanded="false">
-            <span class="faq-item__question">What chains are supported?</span>
-            <span class="faq-item__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
-            </span>
-          </button>
-          <div class="faq-item__answer">
-            <p>KCW Pay currently supports Ethereum, Tron, BNB Chain (BSC), Polygon, Arbitrum, and Optimism. We are actively working on adding more chains to expand cross-chain coverage.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-item__trigger" aria-expanded="false">
-            <span class="faq-item__question">Is KCW Pay self-custody?</span>
-            <span class="faq-item__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
-            </span>
-          </button>
-          <div class="faq-item__answer">
-            <p>Yes. KCW Pay is fully self-custody. You maintain control of your private keys and assets at all times. We never hold or access your funds — we only facilitate the cross-chain transfer process.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-item__trigger" aria-expanded="false">
-            <span class="faq-item__question">What are the fees?</span>
-            <span class="faq-item__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
-            </span>
-          </button>
-          <div class="faq-item__answer">
-            <p>KCW Pay charges a small transparent fee for each cross-chain transfer. The exact fee is displayed before you confirm any transaction — no hidden charges. Network gas fees from the source chain also apply.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-item__trigger" aria-expanded="false">
-            <span class="faq-item__question">How fast are transfers?</span>
-            <span class="faq-item__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
-            </span>
-          </button>
-          <div class="faq-item__answer">
-            <p>Most transfers settle within seconds to a few minutes, depending on the source and destination chain confirmation times. Tron and BSC transfers are typically the fastest.</p>
-          </div>
+      </div>
+      <div class="closing__footer reveal">
+        <span class="closing__copyright">&copy; KCW Pay. All rights reserved.</span>
+        <div class="closing__social">
+          <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="Telegram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+          <a href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Final CTA -->
-  <section class="final-cta">
-    <div class="final-cta__bg">
-      <div class="final-cta__glow"></div>
-    </div>
-    <div class="container">
-      <div class="final-cta__content reveal">
-        <h2 class="final-cta__title">Ready to send USDT<br>across any chain?</h2>
-        <p class="final-cta__desc">
-          Join KCW Pay and experience cross-chain payments the way they should be — 
-          fast, transparent, and simple.
-        </p>
-        <div class="final-cta__ctas">
-          <a href="#" class="btn btn--primary btn--lg">
-            Get Started
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-          <a href="#" class="btn btn--ghost btn--lg">Connect Wallet</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <a href="#" class="footer__logo">
-            <img src="assets/logos/kcw-pay-logo.svg" alt="KCW Pay" class="footer__logo-img">
-            <span class="footer__logo-text">KCW Pay</span>
-          </a>
-          <p class="footer__tagline">Send USDT like a message.</p>
-        </div>
-        <div class="footer__columns">
-          <div class="footer__column">
-            <h4 class="footer__column-title">Product</h4>
-            <a href="#" class="footer__link">Features</a>
-            <a href="#" class="footer__link">Chains</a>
-            <a href="#" class="footer__link">Pricing</a>
-            <a href="#" class="footer__link">Security</a>
-          </div>
-          <div class="footer__column">
-            <h4 class="footer__column-title">Resources</h4>
-            <a href="#" class="footer__link">Documentation</a>
-            <a href="#" class="footer__link">API</a>
-            <a href="#" class="footer__link">Blog</a>
-            <a href="#" class="footer__link">Changelog</a>
-          </div>
-          <div class="footer__column">
-            <h4 class="footer__column-title">Company</h4>
-            <a href="#" class="footer__link">About</a>
-            <a href="#" class="footer__link">Careers</a>
-            <a href="#" class="footer__link">Contact</a>
-            <a href="#" class="footer__link">Press Kit</a>
-          </div>
-          <div class="footer__column">
-            <h4 class="footer__column-title">Legal</h4>
-            <a href="#" class="footer__link">Privacy Policy</a>
-            <a href="#" class="footer__link">Terms of Service</a>
-            <a href="#" class="footer__link">Cookie Policy</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span class="footer__copyright">&copy; KCW Pay. All rights reserved.</span>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link" aria-label="Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="#" class="footer__social-link" aria-label="Telegram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          </a>
-          <a href="#" class="footer__social-link" aria-label="Discord">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-          </a>
-          <a href="#" class="footer__social-link" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
