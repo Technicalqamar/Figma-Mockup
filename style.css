@@ -389,6 +389,96 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .mockup-hero__content { padding: 12px; }
 }
 
+/* ── Phone Screen Components ─────────────────────────────────────── */
+.phone-screen { width: 100%; height: 100%; display: flex; flex-direction: column; color: #fff; overflow-y: auto; overflow-x: hidden; scrollbar-width: none; -ms-overflow-style: none; }
+.phone-screen::-webkit-scrollbar { display: none; }
+.ps-header { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; background: rgba(255,255,255,0.04); flex-shrink: 0; }
+.ps-header__greeting { font-size: 0.5rem; color: rgba(255,255,255,0.45); }
+.ps-header__name { font-size: 0.65rem; font-weight: 700; }
+.ps-header__avatar { width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(135deg, #4F6EF7, #00D4AA); }
+.ps-main { flex: 1; display: flex; flex-direction: column; padding: 10px 12px; gap: 8px; overflow: hidden; }
+
+/* Home Screen */
+.ps-balance { text-align: center; padding: 8px 0; }
+.ps-balance__label { display: block; font-size: 0.45rem; color: rgba(255,255,255,0.4); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.08em; }
+.ps-balance__amount { display: block; font-size: 1.2rem; font-weight: 800; letter-spacing: -0.02em; }
+.ps-balance__change { display: inline-block; font-size: 0.45rem; color: #00D4AA; margin-top: 2px; }
+.ps-actions { display: flex; justify-content: center; gap: 12px; }
+.ps-action { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.ps-action__icon { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; }
+.ps-action__icon--send { background: linear-gradient(135deg, #4F6EF7, #3A56D4); }
+.ps-action__icon--receive { background: linear-gradient(135deg, #00D4AA, #00A88A); }
+.ps-action__icon--swap { background: linear-gradient(135deg, #FFB347, #E6993A); }
+.ps-action__label { font-size: 0.4rem; color: rgba(255,255,255,0.5); font-weight: 600; }
+.ps-chains { display: flex; gap: 6px; justify-content: center; margin-top: auto; }
+.ps-chain { width: 22px; height: 22px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; }
+.ps-chain img { width: 12px; height: 12px; }
+.ps-label { font-size: 0.4rem; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+.ps-section-title { font-size: 0.6rem; font-weight: 700; }
+.ps-tx { display: flex; align-items: center; gap: 6px; padding: 6px; background: rgba(255,255,255,0.04); border-radius: 8px; }
+.ps-tx__icon { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.4rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+.ps-tx__info { flex: 1; min-width: 0; }
+.ps-tx__addr { display: block; font-size: 0.45rem; font-weight: 600; font-family: monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ps-tx__chain { display: block; font-size: 0.35rem; color: rgba(255,255,255,0.35); }
+.ps-tx__amt { font-size: 0.5rem; font-weight: 700; color: #00D4AA; white-space: nowrap; }
+.ps-list { display: flex; flex-direction: column; gap: 4px; overflow: hidden; }
+
+/* Send Screen */
+.ps-send-card { background: rgba(255,255,255,0.04); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+.ps-field { display: flex; flex-direction: column; gap: 2px; }
+.ps-field__label { font-size: 0.4rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+.ps-field__value { font-size: 0.55rem; font-weight: 600; padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.ps-field__value--amount { font-size: 1rem; font-weight: 800; border-bottom-color: rgba(79,110,247,0.3); color: #fff; }
+.ps-chain-select { display: flex; gap: 4px; margin-top: 2px; }
+.ps-chain-opt { font-size: 0.35rem; padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.5); font-weight: 600; }
+.ps-chain-opt--active { background: rgba(79,110,247,0.2); color: #7B93FF; }
+.ps-send-btn { width: 100%; padding: 8px; border-radius: 8px; background: linear-gradient(135deg, #4F6EF7, #3A56D4); color: #fff; font-size: 0.55rem; font-weight: 700; text-align: center; margin-top: 4px; }
+.ps-recent-label { font-size: 0.4rem; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; margin-top: 2px; }
+
+/* Activity Screen */
+.ps-activity-header { display: flex; align-items: center; justify-content: space-between; }
+.ps-filter { display: flex; gap: 3px; }
+.ps-filter__opt { font-size: 0.35rem; padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.4); font-weight: 600; }
+.ps-filter__opt--active { background: rgba(79,110,247,0.2); color: #7B93FF; }
+
+/* Wallet Screen */
+.ps-token { display: flex; align-items: center; gap: 6px; padding: 6px; background: rgba(255,255,255,0.04); border-radius: 8px; }
+.ps-token__icon { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.4rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+.ps-token__info { flex: 1; min-width: 0; }
+.ps-token__name { display: block; font-size: 0.5rem; font-weight: 600; }
+.ps-token__chain { display: block; font-size: 0.35rem; color: rgba(255,255,255,0.35); }
+.ps-token__bal { text-align: right; }
+.ps-token__amt { display: block; font-size: 0.5rem; font-weight: 700; }
+.ps-token__usd { display: block; font-size: 0.35rem; color: rgba(255,255,255,0.35); }
+
+/* Connect Screen */
+.ps-connect-icon { width: 32px; height: 32px; border-radius: 50%; background: rgba(79,110,247,0.15); display: flex; align-items: center; justify-content: center; margin: 0 auto 4px; font-size: 0.8rem; }
+.ps-connect-title { font-size: 0.7rem; font-weight: 800; text-align: center; }
+.ps-connect-desc { font-size: 0.4rem; color: rgba(255,255,255,0.4); text-align: center; line-height: 1.5; }
+.ps-wallet-list { display: flex; flex-direction: column; gap: 4px; }
+.ps-wallet-item { display: flex; align-items: center; gap: 6px; padding: 6px 8px; background: rgba(255,255,255,0.04); border-radius: 8px; }
+.ps-wallet-item__icon { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.4rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+.ps-wallet-item__name { font-size: 0.5rem; font-weight: 600; flex: 1; }
+.ps-wallet-item__arrow { font-size: 0.5rem; color: rgba(255,255,255,0.2); }
+
+/* Confirm Screen */
+.ps-confirm-card { background: rgba(255,255,255,0.04); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 6px; }
+.ps-confirm-row { display: flex; justify-content: space-between; font-size: 0.45rem; }
+.ps-confirm-row span:first-child { color: rgba(255,255,255,0.4); }
+.ps-confirm-row span:last-child { font-weight: 600; }
+.ps-confirm-row--total { padding-top: 4px; border-top: 1px solid rgba(255,255,255,0.08); }
+.ps-confirm-row--total span:last-child { font-weight: 800; color: #fff; }
+.ps-confirm-btn { width: 100%; padding: 8px; border-radius: 8px; background: linear-gradient(135deg, #00D4AA, #00A88A); color: #fff; font-size: 0.55rem; font-weight: 700; text-align: center; margin-top: 4px; }
+.ps-warning { font-size: 0.35rem; color: rgba(255,255,255,0.3); text-align: center; line-height: 1.5; }
+
+/* Amount Input Screen */
+.ps-amount-display { text-align: center; padding: 12px 0 8px; }
+.ps-amount-display__val { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+.ps-amount-display__chain { font-size: 0.4rem; color: rgba(255,255,255,0.4); margin-top: 2px; }
+.ps-numpad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin-top: auto; }
+.ps-numpad__key { padding: 6px; text-align: center; font-size: 0.7rem; font-weight: 600; background: rgba(255,255,255,0.04); border-radius: 6px; }
+.ps-numpad__key--action { background: rgba(79,110,247,0.2); color: #7B93FF; }
+
 /* ── Section Backgrounds ─────────────────────────────────────────── */
 .section--feature-alt { background: var(--color-bg-alt); }
 
