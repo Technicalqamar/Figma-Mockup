@@ -5,6 +5,31 @@
 (function () {
   'use strict';
 
+  // ── Theme Toggle ──────────────────────────────────────────────────────────
+  const THEME_KEY = 'kcw-theme';
+  const root = document.documentElement;
+  const body = document.body;
+
+  function applyTheme(theme) {
+    body.classList.add('theme-transitioning');
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem(THEME_KEY, theme);
+    updateScrollHeader();
+    setTimeout(() => body.classList.remove('theme-transitioning'), 350);
+  }
+
+  function toggleTheme() {
+    const current = root.getAttribute('data-theme') || 'dark';
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  }
+
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved) root.setAttribute('data-theme', saved);
+  else root.setAttribute('data-theme', 'dark');
+
+  document.getElementById('themeToggle')?.addEventListener('click', toggleTheme);
+  document.getElementById('themeToggleMobile')?.addEventListener('click', toggleTheme);
+
   // ── Scroll Reveal ────────────────────────────────────────────────────────
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -70,9 +95,19 @@
 
   // ── Header Background on Scroll ──────────────────────────────────────────
   const header = document.getElementById('header');
-  window.addEventListener('scroll', () => {
-    header.style.background = window.scrollY > 50 ? 'rgba(5,8,16,0.95)' : 'rgba(5,8,16,0.8)';
-  }, { passive: true });
+
+  function updateScrollHeader() {
+    const isLight = root.getAttribute('data-theme') === 'light';
+    const scrolled = window.scrollY > 50;
+    if (isLight) {
+      header.style.background = scrolled ? 'rgba(248,249,252,0.95)' : 'rgba(248,249,252,0.85)';
+    } else {
+      header.style.background = scrolled ? 'rgba(5,8,16,0.95)' : 'rgba(5,8,16,0.8)';
+    }
+  }
+
+  window.addEventListener('scroll', updateScrollHeader, { passive: true });
+  updateScrollHeader();
 
   // ── FAQ Accordion ────────────────────────────────────────────────────────
   document.querySelectorAll('.faq-item__trigger').forEach((trigger) => {
